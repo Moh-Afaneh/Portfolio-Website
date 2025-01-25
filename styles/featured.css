@@ -1,0 +1,132 @@
+.services__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
+}
+.services__icon svg {
+  width: var(--size-2xl);
+  height: var(--size-2xl);
+  display: block;
+}
+.services__item-info {
+  font-size: var(--size-sm);
+  max-width: 60ch;
+}
+.services__title {
+  text-align: center;
+  font-size: var(--size-2xl);
+  text-transform: uppercase;
+  color: var(--clr-light);
+}
+
+.services__info {
+  font-size: var(--size-sm);
+}
+.services__subtitle {
+  color: var(--clr-indigo);
+  font-size: var(--size-sm);
+  text-transform: capitalize;
+  font-weight: 400;
+}
+.services__description {
+  max-width: 60ch;
+  color: var(--clr-slate600);
+  font-size: var(--size-sm);
+  margin: 1rem 0;
+  text-align: center;
+  margin: 0 auto;
+}
+.services__wrapper {
+  display: flex;
+  gap: 1rem;
+}
+.services__item-description {
+  margin-bottom: 0.4em;
+}
+.services__item-info {
+  font-size: var(--size-xs);
+  color: var(--clr-light);
+  max-width: 60ch;
+}
+/* @Media Part */
+/* xs */
+@media (min-width: 475px) {
+  .services__subtitle {
+    font-size: var(--size-base);
+  }
+  .services__title {
+    font-size: var(--size-3xl);
+  }
+  .services__link {
+    width: var(--size-3xl);
+    height: var(--size-3xl);
+  }
+  .services__description {
+    font-size: var(--size-base);
+    margin: 1.5rem 0;
+  }
+}
+
+/* sm */
+/* @media (min-width: 640px) { */
+/*   max-width: 640px; */
+/* } */
+
+/* md */
+/* @media (min-width: 768px) { */
+/*   max-width: 768px; */
+/* } */
+
+/* lg */
+@media (min-width: 1024px) {
+  .services__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+  }
+  .services__icon svg {
+    width: var(--size-4xl);
+    height: var(--size-4xl);
+    display: block;
+  }
+  .services__item-info {
+    font-size: var(--size-sm);
+    max-width: 60ch;
+  }
+  .services__subtitle {
+    font-size: var(--size-lg);
+  }
+  .services__title {
+    font-size: var(--size-4xl);
+  }
+  .services__link {
+    width: var(--size-4xl);
+    height: var(--size-4xl);
+  }
+  .services__description {
+    font-size: var(--size-lg);
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .services__subtitle {
+    font-size: var(--size-xl);
+  }
+  .services__title {
+    font-size: var(--size-5xl);
+  }
+  .services__link {
+    width: var(--size-5xl);
+    height: var(--size-5xl);
+  }
+  .services__description {
+    font-size: var(--size-xl);
+    margin: 2rem 0;
+  }
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) { */
+/*   max-width: 1536px; */
+/* } */

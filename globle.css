@@ -1,0 +1,229 @@
+/* ------------------------
+   Global Reset & Box Sizing
+   ------------------------ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ------------------------
+   Root Variables
+   ------------------------ */
+:root {
+  /* Colors */
+  --clr-dark: #070a13;
+  --clr-light: #f1f5f9;
+  --clr-slate400: #94a3b8;
+  --clr-slate600: #858c96;
+  --clr-slate800: #929dae;
+  --clr-rose: #e11d48;
+  --clr-indigo: #4f46e5;
+
+  /* Font Sizes */
+  --size-xxs: 0.5rem;
+  --size-xs: 0.75rem;
+  --size-sm: 0.875rem;
+  --size-base: 1rem;
+  --size-lg: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.875rem;
+  --size-4xl: 2.25rem;
+  --size-5xl: 3rem;
+  --size-6xl: 3.75rem;
+  --size-7xl: 4.5rem;
+  --size-8xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl: 10rem;
+}
+
+/* ------------------------
+   Accessibility & Adjustments
+   ------------------------ */
+html {
+  text-size-adjust: none; /* Simplified; shorthand covers all browsers */
+  scroll-behavior: smooth;
+}
+
+/* Remove default margins for consistency */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* ------------------------
+   Base Styles
+   ------------------------ */
+.light-mode {
+  --clr-light: #070a13;
+  --clr-dark: #f1f5f9;
+  --clr-slate400: #1e293b;
+  --clr-slate600: #1e293b;
+  --clr-slate800: #1e293b;
+}
+body {
+  font-family: "General Sans", sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+  line-height: 1.5;
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1; /* Shorter line height for emphasis */
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance; /* Balanced text wrapping */
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* ------------------------
+   Media Elements
+   ------------------------ */
+img,
+picture,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+/* ------------------------
+   Forms & Inputs
+   ------------------------ */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* ------------------------
+   Target Anchored Elements
+   ------------------------ */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* ------------------------
+   Container & Section Styles
+   ------------------------ */
+.container {
+  width: 100%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid darkred; /* Custom border for demonstration */
+}
+
+.section {
+  margin-top: 5rem; /* Adds space above section */
+}
+
+/* ------------------------
+   Button Styles
+   ------------------------ */
+button {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background: none;
+  color: inherit;
+}
+
+.btn {
+  font-weight: 600;
+  text-decoration: none;
+  background-color: var(--clr-rose);
+  color: #f1f5f9;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 10px 20px rgba(225, 29, 72, 0.5),
+    0 6px 6px rgba(225, 29, 72, 0.5), 0 0 100px -10px var(--clr-rose);
+  border-radius: 5px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 28px rgba(225, 29, 72, 0.25),
+    0 10px 10px rgba(225, 29, 72, 0.22), 0 0 120px -10px var(--clr-rose);
+}
+strong {
+  color: var(--clr-indigo);
+}
+a {
+  text-decoration: none;
+  color: var(--clr-rose);
+}
+/* @Media Part */
+/* xs */
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+/* sm */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+/* md */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+/* lg */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+/* xl */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+/* 2xl */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}

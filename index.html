@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="globle.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/testimonial.css" />
+    <link rel="stylesheet" href="styles/moblienav.css" />
+    <link rel="stylesheet" href="styles/hero.css" />
+    <link rel="stylesheet" href="styles/about.css" />
+    <link rel="stylesheet" href="styles/featured.css" />
+    <link rel="stylesheet" href="styles/projects.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header container">
+      <nav>
+        <!-- Navigation Menu -->
+        <ul class="header__menu">
+          <li class="header__link"><a href="#about">About</a></li>
+          <li class="header__link"><a href="#services">Services</a></li>
+          <li class="header__link"><a href="#testimonial">Testimonial</a></li>
+          <li class="header__link"><a href="#projects">Projects</a></li>
+          <li class="header__link"><a href="#contact">Contact</a></li>
+
+          <li class="line"></li>
+          <li>
+            <!-- Theme Toggle Button -->
+            <button
+              id="themeswitch"
+              class="header__sun"
+              aria-label="Toggle Theme"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button class="header__resume btn">Resume</button>
+          </li>
+        </ul>
+        <!-- Hamburger Menu icon -->
+        <button class="header__bars" aria-label="Open Menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <!-- Start Hamburger Menu for Mobile -->
+    <div class="moblie--nav">
+      <ul class="moblie--nav__menu">
+        <li><a href="#about" class="moblie--nav_link">About</a></li>
+        <li><a href="#featured" class="moblie--nav_link">Work</a></li>
+        <li><a href="#contact" class="moblie--nav_link">Contact</a></li>
+        <li class="moblie--nav_link-line"></li>
+        <button
+          id="themeswitch"
+          class="moblie--nav__sun"
+          aria-label="Toggle Theme"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+            />
+          </svg>
+        </button>
+        <li>
+          <button class="header__resume btn">Resume</button>
+        </li>
+      </ul>
+    </div>
+    <!-- End Hamburger Menu for Mobile -->
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="hero container">
+        <!-- Hero Image -->
+        <img
+          src="https://placehold.co/150x150"
+          alt="Hero Image"
+          class="hero__image"
+        />
+        <!-- Hero Content -->
+        <h2 class="hero__subtitle">Hi, I'm MJ (Mohammed Jamal) 👋</h2>
+        <h1 class="hero__title">FRONT-END <br />WEB DEVELOPER.</h1>
+        <p class="hero__description">
+          A passionate <strong> Frontend / Fullstack </strong> web developer and
+          <strong>UI/UX enthusiast specialized</strong> in building stunning
+          pixel-perfect interactive websites/applications.
+        </p>
+        <button class="hero__cta btn">Get in Touch</button>
+      </section>
+
+      <section id="about" class="about container section">
+        <div class="about__content">
+          <h2 class="about__title">About</h2>
+          <p class="about__description">
+            Hello there! I'm Mohammed Jamal, a Frontend/Fullstack-MERN web
+            developer based near Montreal. Every morning, I kick off my day with
+            a cup of Timmies coffee, open my laptop, and dive into
+            coding—building awesome things for the web all day, every day.
+          </p>
+          <p class="about__description">
+            People who know me say I'm obsessed, that's fair, I am very driven
+            and love learning new things.
+          </p>
+          <p class="about__description">
+            When I'm not coding, you’ll find me exploring new tech or perfecting
+            my playlist of lo-fi beats. I’m passionate about turning ideas into
+            interactive, user-friendly experiences.
+          </p>
+          <hr class="about__hr" />
+          <h3 class="about__subtitle">Technologies</h3>
+          <div class="about__menu__container">
+            <ul class="about__menu">
+              <li>
+                <div class="tech__stack">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 100 100"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="html5">
+                      <g id="html5_2">
+                        <path
+                          id="Vector"
+                          d="M14.0214 90.0345L6 0.000488281H94.1867L86.1653 89.9859L50.0204 100"
+                          fill="#E44D26"
+                        />
+                        <path
+                          id="Vector_2"
+                          d="M50.093 92.3445V7.39062H86.1407L79.2617 84.2015"
+                          fill="#F16529"
+                        />
+                        <path
+                          id="Vector_3"
+                          d="M22.3831 18.4014H50.0933V29.4369H34.4881L35.509 40.7397H50.0933V51.7509H25.3972L22.3831 18.4014ZM25.8833 57.293H36.9674L37.7452 66.1165L50.0933 69.4223V80.9439L27.439 74.624"
+                          fill="#EBEBEB"
+                        />
+                        <path
+                          id="Vector_4"
+                          d="M77.7058 18.4014H50.0442V29.4369H76.6849L77.7058 18.4014ZM75.6883 40.7397H50.0442V51.7752H63.6562L62.368 66.1165L50.0442 69.4223V80.8953L72.6499 74.624"
+                          fill="white"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                  <div class="stack__text">HTML</div>
+                </div>
+              </li>
+
+              <li>
+                <div class="tech__stack">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 100 100"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="tailwindcss">
+                      <g id="tailwindcss_2">
+                        <path
+                          id="Vector"
+                          d="M50.0002 20.0005C36.6665 20.0005 28.3334 26.6655 24.9996 39.9942C30.0002 33.3292 35.8337 30.8308 42.4999 32.4964C46.3039 33.4468 49.0224 36.2065 52.0323 39.2602C56.9341 44.2345 62.6075 49.9917 75.0009 49.9917C88.3334 49.9917 96.6677 43.3267 100 29.9967C95.0009 36.6617 89.1674 39.1614 82.4999 37.4958C78.6973 36.5454 75.9787 33.7856 72.9689 30.732C68.067 25.7576 62.3924 20.0005 50.0002 20.0005ZM24.9996 49.9917C11.6671 49.9917 3.33274 56.6567 0.000244141 69.9866C4.99962 63.3217 10.8331 60.822 17.5006 62.4888C21.3032 63.4405 24.0218 66.199 27.0316 69.2514C31.9335 74.2257 37.6081 79.9841 50.0002 79.9841C63.334 79.9841 71.6671 73.3191 75.0009 59.9892C70.0002 66.6542 64.1668 69.1538 57.5006 67.487C53.6966 66.5379 50.9781 63.7768 47.9682 60.7244C43.0664 55.7501 37.393 49.9917 24.9996 49.9917Z"
+                          fill="#06B6D4"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+
+                  <div class="stack__text">Tailwind CSS</div>
+                </div>
+              </li>
+              <li>
+                <div class="tech__stack">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 100 100"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="sass">
+                      <g id="sass_2">
+                        <path
+                          id="Vector"
+                          d="M86.1078 56.1116C82.6191 56.1299 79.5871 56.9701 77.0482 58.2121C76.1167 56.3673 75.1851 54.7235 75.0207 53.5179C74.8381 52.1115 74.6189 51.253 74.8381 49.5726C75.0573 47.8922 76.0436 45.4994 76.0253 45.3168C76.0071 45.1341 75.8061 44.2757 73.797 44.2574C71.7878 44.2391 70.0526 44.641 69.8516 45.1707C69.6507 45.7004 69.2671 46.9059 69.0114 48.1479C68.6644 49.9744 64.993 56.4952 62.8925 59.9108C62.2167 58.5774 61.6322 57.4085 61.5043 56.4769C61.3217 55.0705 61.1025 54.212 61.3217 52.5316C61.5409 50.8512 62.5272 48.4584 62.5089 48.2758C62.4907 48.0931 62.2898 47.2346 60.2806 47.2164C58.2714 47.1981 56.5362 47.5999 56.3352 48.1296C56.1343 48.6593 55.9151 49.9014 55.495 51.1069C55.0749 52.3124 50.1981 63.1986 48.9195 66.0115C48.2619 67.4544 47.6957 68.6051 47.2939 69.3906C47.2939 69.3906 47.2756 69.4454 47.2208 69.5367C46.8738 70.2125 46.6729 70.5778 46.6729 70.5778C46.6729 70.5778 46.6729 70.5778 46.6729 70.5961C46.3989 71.0892 46.1066 71.5459 45.9605 71.5459C45.8509 71.5459 45.65 70.2308 45.997 68.4408C46.7276 64.6598 48.4629 58.7784 48.4446 58.5774C48.4446 58.4679 48.7734 57.445 47.3121 56.9153C45.8874 56.3856 45.376 57.2623 45.2482 57.2623C45.1203 57.2623 45.029 57.5729 45.029 57.5729C45.029 57.5729 46.6181 50.9608 41.9969 50.9608C39.111 50.9608 35.1291 54.1207 33.1565 56.9701C31.9144 57.6459 29.2659 59.0889 26.4348 60.6414C25.3571 61.2442 24.243 61.847 23.2018 62.4132C23.1288 62.3401 23.0557 62.2488 22.9826 62.1757C17.3934 56.2029 7.05523 51.9836 7.4936 43.9651C7.65799 41.0427 8.66258 33.3712 27.3481 24.0559C42.7275 16.4757 54.9653 18.5762 57.0841 23.2339C60.1162 29.8825 50.5269 42.2299 34.636 44.0199C28.5719 44.6958 25.3937 42.3578 24.59 41.481C23.7498 40.5678 23.6219 40.513 23.3114 40.6956C22.8 40.9696 23.1288 41.7916 23.3114 42.2665C23.7863 43.5085 25.7407 45.7003 29.0468 46.778C31.9692 47.7278 39.0745 48.2575 47.6774 44.9332C57.3033 41.2071 64.8286 30.8506 62.6185 22.1745C60.4084 13.3706 45.7961 10.4664 31.9692 15.3798C23.7498 18.3023 14.8363 22.9051 8.42513 28.8962C0.808465 36.0197 -0.397049 42.2117 0.096116 44.8053C1.86786 54.0111 14.5623 60.0021 19.6401 64.4406C19.3844 64.5868 19.1469 64.7146 18.946 64.8242C16.4071 66.0845 6.72645 71.144 4.31542 76.4958C1.57561 82.5599 4.75379 86.9071 6.85431 87.4916C13.3751 89.2998 20.0784 86.0486 23.6767 80.6786C27.275 75.3085 26.8366 68.3312 25.1745 65.1347C25.1562 65.0982 25.138 65.0617 25.1014 65.0251C25.759 64.6416 26.4348 64.2397 27.0924 63.8561C28.3892 63.089 29.6678 62.3766 30.7637 61.7922C30.1427 63.4908 29.686 65.5183 29.4669 68.4408C29.1929 71.8746 30.5993 76.3314 32.4441 78.0849C33.2661 78.852 34.2341 78.8703 34.8551 78.8703C37.0105 78.8703 37.9785 77.0803 39.0562 74.9615C40.3713 72.3678 41.5585 69.354 41.5585 69.354C41.5585 69.354 40.079 77.5004 44.0974 77.5004C45.5587 77.5004 47.0382 75.6008 47.6957 74.6327C47.6957 74.651 47.6957 74.651 47.6957 74.651C47.6957 74.651 47.7322 74.5962 47.8053 74.4683C47.9514 74.2309 48.0428 74.0848 48.0428 74.0848C48.0428 74.0848 48.0428 74.0665 48.0428 74.0482C48.6273 73.0254 49.9424 70.7057 51.8968 66.8517C54.4174 61.8835 56.8467 55.6733 56.8467 55.6733C56.8467 55.6733 57.0659 57.1893 57.8147 59.7099C58.2531 61.1894 59.1664 62.815 59.897 64.3858C59.3125 65.2078 58.9472 65.6644 58.9472 65.6644C58.9472 65.6644 58.9472 65.6644 58.9655 65.6827C58.4906 66.3037 57.9791 66.9795 57.4129 67.6371C55.422 70.0116 53.0475 72.7331 52.7187 73.5185C52.3351 74.4501 52.4265 75.1259 53.1571 75.6739C53.6868 76.0757 54.6366 76.1305 55.6046 76.0757C57.3946 75.9478 58.6549 75.5095 59.276 75.2355C60.244 74.8884 61.3765 74.3587 62.4359 73.5733C64.3903 72.1304 65.5775 70.0664 65.4679 67.3448C65.4131 65.8471 64.92 64.3493 64.3172 62.9429C64.4999 62.6872 64.6643 62.4314 64.8469 62.1757C67.9338 57.6642 70.3265 52.7143 70.3265 52.7143C70.3265 52.7143 70.5457 54.2303 71.2946 56.7509C71.6599 58.0295 72.4088 59.4177 73.0663 60.7693C70.1621 63.1255 68.3721 65.8653 67.7328 67.6553C66.5821 70.9796 67.4771 72.4774 69.1758 72.8244C69.943 72.9888 71.0389 72.6235 71.8426 72.2765C72.8654 71.9477 74.0709 71.3815 75.2216 70.5413C77.176 69.0983 79.0574 67.0891 78.9478 64.3676C78.893 63.1255 78.5642 61.9017 78.1076 60.7145C80.5734 59.6916 83.7516 59.1254 87.8065 59.6003C96.5008 60.6232 98.2178 66.048 97.889 68.3312C97.5602 70.6143 95.7337 71.8564 95.1309 72.24C94.5282 72.6235 94.3273 72.7514 94.382 73.0254C94.4551 73.4272 94.7474 73.4089 95.2588 73.3359C95.9711 73.208 99.8251 71.4911 99.9895 67.29C100.264 61.92 95.1492 56.0568 86.1078 56.1116ZM19.0373 78.7242C16.1514 81.8658 12.133 83.0531 10.3978 82.0485C8.53473 80.9708 9.26534 76.3314 12.8088 73.0071C14.9641 70.9796 17.7405 69.0983 19.5853 67.9476C20.0054 67.6919 20.6264 67.3266 21.3753 66.8699C21.5032 66.7969 21.5762 66.7603 21.5762 66.7603C21.7223 66.669 21.8685 66.5777 22.0146 66.4864C23.3114 71.2354 22.0694 75.4181 19.0373 78.7242ZM40.0425 64.4406C39.0379 66.8882 36.9374 73.1532 35.6588 72.8062C34.5629 72.5139 33.8871 67.7649 35.4396 63.0707C36.2251 60.7145 37.8872 57.9016 38.8553 56.8057C40.4261 55.0522 42.1613 54.4677 42.5814 55.1801C43.1111 56.1116 40.6635 62.9063 40.0425 64.4406ZM57.3764 72.7331C56.9563 72.9523 56.5544 73.0984 56.3718 72.9888C56.2439 72.9158 56.5544 72.6235 56.5544 72.6235C56.5544 72.6235 58.728 70.2856 59.5865 69.2262C60.0796 68.6051 60.6641 67.8745 61.2852 67.0526C61.2852 67.1256 61.2852 67.217 61.2852 67.29C61.2852 70.0846 58.5819 71.966 57.3764 72.7331ZM70.7466 69.6828C70.4361 69.4636 70.4909 68.733 71.532 66.4498C71.9339 65.5548 72.8837 64.0571 74.5093 62.6141C74.692 63.1986 74.8198 63.7648 74.8016 64.2945C74.7833 67.8197 72.2627 69.1348 70.7466 69.6828Z"
+                          fill="#CD6799"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+
+                  <div class="stack__text">Sass</div>
+                </div>
+              </li>
+            </ul>
+            <div class="about__menu">
+              <li>
+                <div class="tech__stack">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 100 100"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="css3">
+                      <g id="css3_2">
+                        <path
+                          id="polygon2989"
+                          d="M94.1749 0.000488281L86.142 89.99L50.0335 100L14.0245 90.0041L6 0.000488281H94.1749Z"
+                          fill="#264DE4"
+                        />
+                        <path
+                          id="polygon2991"
+                          d="M79.2648 84.2598L86.1295 7.35962H50.0874V92.3489L79.2648 84.2598Z"
+                          fill="#2965F1"
+                        />
+                        <path
+                          id="polygon2993"
+                          d="M24.3959 40.7407L25.3852 51.7792H50.0874V40.7407H24.3959Z"
+                          fill="#EBEBEB"
+                        />
+                        <path
+                          id="polygon2995"
+                          d="M50.0875 18.3982H50.0493H22.408L23.4114 29.4369H50.0875V18.3982Z"
+                          fill="#EBEBEB"
+                        />
+                        <path
+                          id="polygon2997"
+                          d="M50.0874 80.8935V69.4088L50.039 69.4217L37.7453 66.1021L36.9594 57.2983H30.9856H25.8784L27.4249 74.6305L50.0366 80.9077L50.0874 80.8935Z"
+                          fill="#EBEBEB"
+                        />
+                        <path
+                          id="polygon3005"
+                          d="M63.6421 51.779L62.3608 66.0952L50.0493 69.4182V80.9024L72.679 74.6306L72.845 72.7657L75.439 43.7047L75.7083 40.7406L77.7011 18.3982H50.0493V29.4369H65.6038L64.5994 40.7406H50.0493V51.779H63.6421Z"
+                          fill="white"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+
+                  <div class="stack__text">CSS</div>
+                </div>
+              </li>
+              <li>
+                <div class="tech__stack">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 101 100"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="reactjs">
+                      <g id="reactjs_2">
+                        <path
+                          id="Vector"
+                          d="M50.3067 58.8168C55.1757 58.8168 59.1229 54.8697 59.1229 50.0006C59.1229 45.1315 55.1757 41.1844 50.3067 41.1844C45.4376 41.1844 41.4904 45.1315 41.4904 50.0006C41.4904 54.8697 45.4376 58.8168 50.3067 58.8168Z"
+                          fill="#61DAFB"
+                        />
+                        <path
+                          id="Vector_2"
+                          d="M50.3066 68.0631C76.4333 68.0631 97.6132 59.9762 97.6132 50.0005C97.6132 40.0249 76.4333 31.938 50.3066 31.938C24.1799 31.938 3 40.0249 3 50.0005C3 59.9762 24.1799 68.0631 50.3066 68.0631Z"
+                          stroke="#61DAFB"
+                          stroke-width="5"
+                        />
+                        <path
+                          id="Vector_3"
+                          d="M34.664 59.0318C47.7274 81.6582 65.3207 95.9571 73.9599 90.9692C82.5991 85.9814 79.0126 63.5957 65.9492 40.9693C52.8858 18.3428 35.2925 4.04395 26.6533 9.03178C18.0141 14.0196 21.6006 36.4054 34.664 59.0318Z"
+                          stroke="#61DAFB"
+                          stroke-width="5"
+                        />
+                        <path
+                          id="Vector_4"
+                          d="M34.664 40.9692C21.6007 63.5956 18.0141 85.9814 26.6533 90.9692C35.2925 95.957 52.8859 81.6582 65.9492 59.0318C79.0126 36.4053 82.5991 14.0196 73.9599 9.03176C65.3208 4.04393 47.7274 18.3428 34.664 40.9692Z"
+                          stroke="#61DAFB"
+                          stroke-width="5"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+
+                  <div class="stack__text">React</div>
+                </div>
+              </li>
+              <li>
+                <div class="tech__stack">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 100 100"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="nextjs2">
+                      <g id="nextjs2_2">
+                        <path
+                          id="Vector"
+                          d="M50 99.9996C77.6142 99.9996 100 77.6139 100 49.9996C100 22.3854 77.6142 -0.000366211 50 -0.000366211C22.3858 -0.000366211 0 22.3854 0 49.9996C0 77.6139 22.3858 99.9996 50 99.9996Z"
+                          fill="black"
+                        />
+                        <path
+                          id="Vector_2"
+                          d="M83.06 87.511L38.4122 29.9996H30V69.983H36.7298V38.546L77.7773 91.5803C79.6294 90.3405 81.394 88.9804 83.06 87.511Z"
+                          fill="url(#paint0_linear_790_2961)"
+                        />
+                        <path
+                          id="Vector_3"
+                          d="M70.5558 29.9996H63.8892V69.9996H70.5558V29.9996Z"
+                          fill="url(#paint1_linear_790_2961)"
+                        />
+                      </g>
+                    </g>
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_790_2961"
+                        x1="60.5555"
+                        y1="64.7219"
+                        x2="80.2778"
+                        y2="89.1663"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="white" />
+                        <stop offset="1" stop-color="white" stop-opacity="0" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint1_linear_790_2961"
+                        x1="67.2225"
+                        y1="29.9996"
+                        x2="67.1109"
+                        y2="59.3748"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="white" />
+                        <stop offset="1" stop-color="white" stop-opacity="0" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+
+                  <div class="stack__text">Next 2.0</div>
+                </div>
+              </li>
+            </div>
+          </div>
+        </div>
+        <div class="about__img-wrapper">
+          <img src="https://placehold.co/800x800" alt="" />
+        </div>
+      </section>
+
+      <!-- Featured Section -->
+      <section id="services" class="services container section">
+        <h2 class="services__title">My Services</h2>
+
+        <p class="services__description">
+          Here is a list of stuff I can do for you!
+        </p>
+        <div class="services__grid">
+          <div class="services__wrapper">
+            <span class="services__icon"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15"
+                />
+              </svg>
+            </span>
+            <div>
+              <h3 class="services__item-description">Responsive</h3>
+              <span class="services__item-info">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Perspiciatis maxime labore recusandae. Vitae ut tenetur aliquam?
+                Veritatis reiciendis nihil sunt a quibusdam qui quas voluptatem
+                dolore. Iusto id molestias ipsa?
+              </span>
+            </div>
+          </div>
+          <div class="services__wrapper">
+            <span class="services__icon"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m15 11.25 1.5 1.5.75-.75V8.758l2.276-.61a3 3 0 1 0-3.675-3.675l-.61 2.277H12l-.75.75 1.5 1.5M15 11.25l-8.47 8.47c-.34.34-.8.53-1.28.53s-.94.19-1.28.53l-.97.97-.75-.75.97-.97c.34-.34.53-.8.53-1.28s.19-.94.53-1.28L12.75 9M15 11.25 12.75 9"
+                />
+              </svg>
+            </span>
+            <div>
+              <h3 class="services__item-description">Unique design</h3>
+              <span class="services__item-info">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Perspiciatis maxime labore recusandae. Vitae ut tenetur aliquam?
+                Veritatis reiciendis nihil sunt a quibusdam qui quas voluptatem
+                dolore. Iusto id molestias ipsa?
+              </span>
+            </div>
+          </div>
+          <div class="services__wrapper">
+            <span class="services__icon"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z"
+                />
+              </svg>
+            </span>
+            <div>
+              <h3 class="services__item-description">Payment gateways</h3>
+              <span class="services__item-info">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Perspiciatis maxime labore recusandae. Vitae ut tenetur aliquam?
+                Veritatis reiciendis nihil sunt a quibusdam qui quas voluptatem
+                dolore. Iusto id molestias ipsa?
+              </span>
+            </div>
+          </div>
+          <div class="services__wrapper">
+            <span class="services__icon"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.362 5.214A8.252 8.252 0 0 1 12 21 8.25 8.25 0 0 1 6.038 7.047 8.287 8.287 0 0 0 9 9.601a8.983 8.983 0 0 1 3.361-6.867 8.21 8.21 0 0 0 3 2.48Z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 18a3.75 3.75 0 0 0 .495-7.468 5.99 5.99 0 0 0-1.925 3.547 5.975 5.975 0 0 1-2.133-1.001A3.75 3.75 0 0 0 12 18Z"
+                />
+              </svg>
+            </span>
+            <div>
+              <h3 class="services__item-description">performance</h3>
+              <span class="services__item-info">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Perspiciatis maxime labore recusandae. Vitae ut tenetur aliquam?
+                Veritatis reiciendis nihil sunt a quibusdam qui quas voluptatem
+                dolore. Iusto id molestias ipsa?
+              </span>
+            </div>
+          </div>
+          <div class="services__wrapper">
+            <span class="services__icon"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                />
+              </svg>
+            </span>
+            <div>
+              <h3 class="services__item-description">Fast & powerful</h3>
+              <span class="services__item-info">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Perspiciatis maxime labore recusandae. Vitae ut tenetur aliquam?
+                Veritatis reiciendis nihil sunt a quibusdam qui quas voluptatem
+                dolore. Iusto id molestias ipsa?
+              </span>
+            </div>
+          </div>
+          <div class="services__wrapper">
+            <span class="services__icon"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 0 1 1.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.559.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.894.149c-.424.07-.764.383-.929.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 0 1-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.398.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 0 1-.12-1.45l.527-.737c.25-.35.272-.806.108-1.204-.165-.397-.506-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.108-1.204l-.526-.738a1.125 1.125 0 0 1 .12-1.45l.773-.773a1.125 1.125 0 0 1 1.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894Z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                />
+              </svg>
+            </span>
+            <div>
+              <h3 class="services__item-description">Support</h3>
+              <span class="services__item-info">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Perspiciatis maxime labore recusandae. Vitae ut tenetur aliquam?
+                Veritatis reiciendis nihil sunt a quibusdam qui quas voluptatem
+                dolore. Iusto id molestias ipsa?
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work Section -->
+      <section id="projects" class="projects container section">
+        <h2 class="projects__title">Projects</h2>
+        <p class="projects__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          veniam consequuntur iure nam quaerat molestiae, dolores cumque et
+          totam provident? Assumenda vero expedita molestiae sit ratione dolore
+          voluptatum mollitia tenetur.
+        </p>
+        <!-- Project-1 -->
+        <div class="projects__grid">
+          <h3 class="projects__project-title">Wax Motif</h3>
+          <div class="projects__img-wrapper projects__image1">
+            <img src="https://placehold.co/900x900" alt="" />
+          </div>
+          <div class="projects__project projects__content1">
+            <h3 class="project__project-subtitle">Project-1</h3>
+            <p class="projects__project-description1">
+              Labore magna ut non labore Lorem nisi culpa sint et quis sint.
+              Enim pariatur deserunt do ad exercitation.
+            </p>
+            <p class="projects__project-description2">
+              Ea ut non cupidatat consequat sint elit ipsum culpa dolor cillum
+              commodo. Do esse excepteur cillum deserunt duis incididunt. Eu
+              tempor ullamco aliqua consectetur incididunt anim dolor sunt
+              laboris adipisicing cupidatat sint.
+            </p>
+            <a class="btn projects__project-btn" href="#">Website</a>
+          </div>
+
+          <!-- Project-2 -->
+          <h3 class="projects__project-title">Draze force</h3>
+          <div class="projects__img-wrapper projects__image2">
+            <img src="https://placehold.co/900x900" alt="" />
+          </div>
+          <div class="projects__project projects__content2">
+            <h3 class="project__project-subtitle">Project-2</h3>
+            <p class="projects__project-description1">
+              Labore magna ut non labore Lorem nisi culpa sint et quis sint.
+              Enim pariatur deserunt do ad exercitation.
+            </p>
+            <p class="projects__project-description2">
+              Ea ut non cupidatat consequat sint elit ipsum culpa dolor cillum
+              commodo. Do esse excepteur cillum deserunt duis incididunt. Eu
+              tempor ullamco aliqua consectetur incididunt anim dolor sunt
+              laboris adipisicing cupidatat sint.
+            </p>
+            <a class="btn projects__project-btn" href="#">Website</a>
+          </div>
+
+          <!-- Project-3 -->
+          <h3 class="projects__project-title">showcase 3</h3>
+          <div class="projects__img-wrapper projects__image3">
+            <img src="https://placehold.co/900x900" alt="" />
+          </div>
+          <div class="projects__project projects__content3">
+            <h3 class="project__project-subtitle">Project-3</h3>
+            <p class="projects__project-description1">
+              Labore magna ut non labore Lorem nisi culpa sint et quis sint.
+              Enim pariatur deserunt do ad exercitation.
+            </p>
+            <p class="projects__project-description2">
+              Ea ut non cupidatat consequat sint elit ipsum culpa dolor cillum
+              commodo. Do esse excepteur cillum deserunt duis incididunt. Eu
+              tempor ullamco aliqua consectetur incididunt anim dolor sunt
+              laboris adipisicing cupidatat sint.
+            </p>
+            <a class="btn projects__project-btn" href="#">Website</a>
+          </div>
+          <!-- Project-4 -->
+          <h3 class="projects__project-title">showcase 4</h3>
+          <div class="projects__img-wrapper projects__image4">
+            <img src="https://placehold.co/900x900" alt="" />
+          </div>
+          <div class="projects__project projects__contnet4">
+            <h3 class="project__project-subtitle">Project-4</h3>
+            <p class="projects__project-description1">
+              Labore magna ut non labore Lorem nisi culpa sint et quis sint.
+              Enim pariatur deserunt do ad exercitation.
+            </p>
+            <p class="projects__project-description2">
+              Ea ut non cupidatat consequat sint elit ipsum culpa dolor cillum
+              commodo. Do esse excepteur cillum deserunt duis incididunt. Eu
+              tempor ullamco aliqua consectetur incididunt anim dolor sunt
+              laboris adipisicing cupidatat sint.
+            </p>
+            <a class="btn projects__project-btn" href="#">Website</a>
+          </div>
+          <!-- Project-5 -->
+          <h3 class="projects__project-title">showcase 5</h3>
+          <div class="projects__img-wrapper projects__image5">
+            <img src="https://placehold.co/900x900" alt="" />
+          </div>
+          <div class="projects__project">
+            <h3 class="project__project-subtitle projects__content5">
+              Project-5
+            </h3>
+            <p class="projects__project-description1">
+              Labore magna ut non labore Lorem nisi culpa sint et quis sint.
+              Enim pariatur deserunt do ad exercitation.
+            </p>
+            <p class="projects__project-description2">
+              Ea ut non cupidatat consequat sint elit ipsum culpa dolor cillum
+              commodo. Do esse excepteur cillum deserunt duis incididunt. Eu
+              tempor ullamco aliqua consectetur incididunt anim dolor sunt
+              laboris adipisicing cupidatat sint.
+            </p>
+            <a class="btn projects__project-btn" href="#">Website</a>
+          </div>
+          <!-- Project-6 -->
+          <h3 class="projects__project-title">showcase 6</h3>
+          <div class="projects__img-wrapper projects__image6">
+            <img src="https://placehold.co/900x900" alt="" />
+          </div>
+          <div class="projects__project projects__content6">
+            <h3 class="project__project-subtitle">showcase 6</h3>
+            <p class="projects__project-description1">
+              Labore magna ut non labore Lorem nisi culpa sint et quis sint.
+              Enim pariatur deserunt do ad exercitation.
+            </p>
+            <p class="projects__project-description2">
+              Ea ut non cupidatat consequat sint elit ipsum culpa dolor cillum
+              commodo. Do esse excepteur cillum deserunt duis incididunt. Eu
+              tempor ullamco aliqua consectetur incididunt anim dolor sunt
+              laboris adipisicing cupidatat sint.
+            </p>
+            <a class="btn projects__project-btn" href="#">Website</a>
+          </div>
+        </div>
+      </section>
+      <!-- Testimonial Slider Section -->
+      <section id="testimonial" class="testimonial container section">
+        <h1 class="testimonal__title">Testimonials</h1>
+        <div class="testimonial__grid">
+          <div class="testimonial__grid-card">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                fill="currentColor"
+              >
+                <path
+                  d="M4.58341 17.3211C3.55316 16.2274 3 15 3 13.0103C3 9.51086 5.45651 6.37366 9.03059 4.82318L9.92328 6.20079C6.58804 8.00539 5.93618 10.346 5.67564 11.822C6.21263 11.5443 6.91558 11.4466 7.60471 11.5105C9.40908 11.6778 10.8312 13.159 10.8312 15C10.8312 16.933 9.26416 18.5 7.33116 18.5C6.2581 18.5 5.23196 18.0095 4.58341 17.3211ZM14.5834 17.3211C13.5532 16.2274 13 15 13 13.0103C13 9.51086 15.4565 6.37366 19.0306 4.82318L19.9233 6.20079C16.588 8.00539 15.9362 10.346 15.6756 11.822C16.2126 11.5443 16.9156 11.4466 17.6047 11.5105C19.4091 11.6778 20.8312 13.159 20.8312 15C20.8312 16.933 19.2642 18.5 17.3312 18.5C16.2581 18.5 15.232 18.0095 14.5834 17.3211Z"
+                ></path>
+              </svg>
+            </span>
+            <h3>Quality Code, Timely Delivery: MJ Exceeds Expectations</h3>
+            <p>
+              MJ delivered clean, efficient code ahead of schedule. The work
+              exceeded expectations and was executed with great attention to
+              detail. Highly recommend for any project!
+            </p>
+
+            <img src="public/Img/johndoe.jpg" alt="" />
+
+            <h5>John Doe</h5>
+            <h6>Admin@Bigo</h6>
+          </div>
+          <div class="testimonial__grid-card">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                fill="currentColor"
+              >
+                <path
+                  d="M4.58341 17.3211C3.55316 16.2274 3 15 3 13.0103C3 9.51086 5.45651 6.37366 9.03059 4.82318L9.92328 6.20079C6.58804 8.00539 5.93618 10.346 5.67564 11.822C6.21263 11.5443 6.91558 11.4466 7.60471 11.5105C9.40908 11.6778 10.8312 13.159 10.8312 15C10.8312 16.933 9.26416 18.5 7.33116 18.5C6.2581 18.5 5.23196 18.0095 4.58341 17.3211ZM14.5834 17.3211C13.5532 16.2274 13 15 13 13.0103C13 9.51086 15.4565 6.37366 19.0306 4.82318L19.9233 6.20079C16.588 8.00539 15.9362 10.346 15.6756 11.822C16.2126 11.5443 16.9156 11.4466 17.6047 11.5105C19.4091 11.6778 20.8312 13.159 20.8312 15C20.8312 16.933 19.2642 18.5 17.3312 18.5C16.2581 18.5 15.232 18.0095 14.5834 17.3211Z"
+                ></path>
+              </svg>
+            </span>
+            <h3>Quality Code, Timely Delivery: MJ Exceeds Expectations</h3>
+            <p>
+              MJ delivered clean, efficient code ahead of schedule. The work
+              exceeded expectations and was executed with great attention to
+              detail. Highly recommend for any project!
+            </p>
+
+            <img src="public/Img/johndoe.jpg" alt="" />
+
+            <h5>John Doe</h5>
+            <h6>Admin@Bigo</h6>
+          </div>
+          <div class="testimonial__grid-card">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                fill="currentColor"
+              >
+                <path
+                  d="M4.58341 17.3211C3.55316 16.2274 3 15 3 13.0103C3 9.51086 5.45651 6.37366 9.03059 4.82318L9.92328 6.20079C6.58804 8.00539 5.93618 10.346 5.67564 11.822C6.21263 11.5443 6.91558 11.4466 7.60471 11.5105C9.40908 11.6778 10.8312 13.159 10.8312 15C10.8312 16.933 9.26416 18.5 7.33116 18.5C6.2581 18.5 5.23196 18.0095 4.58341 17.3211ZM14.5834 17.3211C13.5532 16.2274 13 15 13 13.0103C13 9.51086 15.4565 6.37366 19.0306 4.82318L19.9233 6.20079C16.588 8.00539 15.9362 10.346 15.6756 11.822C16.2126 11.5443 16.9156 11.4466 17.6047 11.5105C19.4091 11.6778 20.8312 13.159 20.8312 15C20.8312 16.933 19.2642 18.5 17.3312 18.5C16.2581 18.5 15.232 18.0095 14.5834 17.3211Z"
+                ></path>
+              </svg>
+            </span>
+            <h3>Quality Code, Timely Delivery: MJ Exceeds Expectations</h3>
+            <p>
+              MJ delivered clean, efficient code ahead of schedule. The work
+              exceeded expectations and was executed with great attention to
+              detail. Highly recommend for any project!
+            </p>
+
+            <img src="public/Img/johndoe.jpg" alt="" />
+
+            <h5>John Doe</h5>
+            <h6>Admin@Bigo</h6>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact container section">
+        <h2 class="contact__title">Get in Contact</h2>
+        <p class="contact__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic error,
+          rem tempore deserunt est numquam ipsum ab sit! Voluptate assumenda hic
+          commodi aut, nesciunt nobis quasi sunt minima repellendus a!
+        </p>
+        <a href="#" class="btn__contact btn">Reach out</a>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer container section">
+      <h3 class="footer__title">~Mohammed Jamal~</h3>
+    </footer>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
