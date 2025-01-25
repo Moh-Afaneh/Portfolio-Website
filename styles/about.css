@@ -39,6 +39,8 @@
 }
 .about__img-wrapper {
   border-radius: 34px;
+  max-width: 100%;
+  width: 800px;
 }
 .about__img-wrapper img {
   border-radius: 34px;
