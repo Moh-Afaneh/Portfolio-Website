@@ -6,7 +6,7 @@
   height: 100%;
   position: absolute;
   background-color: var(--clr-dark);
-  display: none;
+  display: hidden;
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -16,7 +16,7 @@
   display: flex;
   opacity: 1;
   right: 0;
-  transition: all 0.4s;
+  transition: all 0.2s;
 }
 .moblie--nav__menu {
   padding: 0;
