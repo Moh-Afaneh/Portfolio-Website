@@ -29,12 +29,11 @@
   font-weight: 400;
 }
 .services__description {
-  max-width: 60ch;
+  max-width: 100%;
   color: var(--clr-slate600);
   font-size: var(--size-sm);
-  margin: 1rem 0;
+  margin: 1rem auto;
   text-align: center;
-  margin: 0 auto;
 }
 .services__wrapper {
   display: flex;

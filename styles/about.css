@@ -23,7 +23,8 @@
   font-size: var(--size-sm);
 }
 .about__hr {
-  border-color: var(--clr-slate800);
+  width: 100%;
+  border-color: var(--clr-slate600);
 }
 .about__subtitle {
   color: var(--clr-slate400);
