@@ -44,7 +44,7 @@
 
 .testimonial__grid-card p {
   margin-bottom: 2rem;
-  font-size: var(--size-lg);
+  font-size: var(--size-sm);
   z-index: 999;
 }
 

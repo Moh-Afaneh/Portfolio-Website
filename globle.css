@@ -44,6 +44,7 @@
 html {
   text-size-adjust: none; /* Simplified; shorthand covers all browsers */
   scroll-behavior: smooth;
+  overflow-x: hidden !important;
 }
 
 /* Remove default margins for consistency */
@@ -72,7 +73,7 @@ dd {
 }
 body {
   font-family: "General Sans", sans-serif;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   min-height: 100vh;
   line-height: 1.5;
   background-color: var(--clr-dark);
@@ -148,7 +149,6 @@ textarea:not([rows]) {
   padding-right: 0.5rem;
   margin-left: auto;
   margin-right: auto;
-  border: 2px solid darkred; /* Custom border for demonstration */
 }
 
 .section {

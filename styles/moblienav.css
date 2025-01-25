@@ -6,13 +6,14 @@
   height: 100%;
   position: absolute;
   background-color: var(--clr-dark);
-  display: flex;
+  display: none;
   justify-content: center;
   text-align: center;
   align-items: center;
   opacity: 0;
 }
 .moblie--nav.active {
+  display: flex;
   opacity: 1;
   right: 0;
   transition: all 0.4s;
@@ -44,14 +45,15 @@
   height: var(--size-xl);
   color: var(--clr-slate600);
 }
+
 @media (min-width: 768px) {
   .moblie--nav {
-    display: none;
+    display: hidden;
   }
 }
 /* lg */
 @media (min-width: 1024px) {
   .moblie--nav {
-    display: none;
+    display: hidden;
   }
 }
