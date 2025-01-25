@@ -18,8 +18,9 @@
 }
 
 .testimonial__grid-card {
+  border: 1px solid var(--clr-rose);
   text-align: center;
-  background: var(--clr-slate600);
+  background: var(--clr-dark);
   position: relative;
   overflow: hidden;
   padding: 1rem;
