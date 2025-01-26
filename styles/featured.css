@@ -95,9 +95,7 @@
   .services__subtitle {
     font-size: var(--size-lg);
   }
-  .services__title {
-    font-size: var(--size-4xl);
-  }
+
   .services__link {
     width: var(--size-4xl);
     height: var(--size-4xl);

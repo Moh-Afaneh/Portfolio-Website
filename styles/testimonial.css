@@ -4,12 +4,18 @@
   text-align: center;
 }
 
-.testimonial__title {
-  font-size: var(--size-2xl);
+.testimonal__title {
+  font-size: var(--size-3xl);
   color: var(--clr-light);
   text-transform: capitalize;
+  margin-bottom: 2rem;
 }
-
+.testimonal__description {
+  max-width: 60ch;
+  font-size: var(--size-sm);
+  color: var(--clr-slate600);
+  margin: 1rem auto;
+}
 .testimonial__grid {
   margin-top: 0.5em;
   display: grid;
@@ -52,9 +58,9 @@
 .testimonial__grid-card img {
   display: block;
   margin: 0 auto;
-  max-width: 120px;
+  max-width: 80px;
   width: 100%;
-  height: 120px; /* Fixed height to ensure it's always a circle */
+  height: 80px; /* Fixed height to ensure it's always a circle */
   border-radius: 50%; /* Keeps the image circular */
   border: 2px solid var(--clr-rose);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -81,6 +87,7 @@ h6 {
 @media (min-width: 768px) {
   .testimonial__title {
     font-size: var(--size-4xl);
+    margin-bottom: 2rem;
   }
 
   .testimonial__grid {
