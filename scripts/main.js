@@ -5,6 +5,14 @@ if (headerBarIcon && moblieNavEl) {
     moblieNavEl.classList.toggle("active");
   });
 }
+// Handle resizing to ensure correct menu state
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 768) {
+    // Remove active class for larger screens
+    moblieNavEl.classList.remove("active");
+  }
+});
+
 const sunIcon = document.querySelector("#themeswitch");
 if (sunIcon) {
   sunIcon.addEventListener("click", () => {
