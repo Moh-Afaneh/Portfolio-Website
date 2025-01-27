@@ -25,7 +25,8 @@
     gap: 1.5em;
   }
   .contact__title {
-    font-size: var(--size-23xl);
+    font-size: var(--size-3xl);
+    text-align: center;
   }
   .contact__description {
     font-size: var(--size-base);
